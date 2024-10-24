@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: textSummarizer
+Version: 0.0.0
+Summary: Text Summarizer application implemented with FASTAPI and HuggingFace Model
+Home-page: https://github.com/yssh03/Text-Summarizer
+Author: yssh03
+Author-email: yash.r.0903@gmail.com
+Project-URL: Bug Tracker, https://github.com/yssh03/Text-Summarizer/issues

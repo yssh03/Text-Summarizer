@@ -55,7 +55,7 @@ class ModelEvaluation:
 
         rouge_metric = load('rouge')
         score = self.metric_for_test_data(
-            dataset_samsum_pt['test'][1:10], rouge_metric, model_pegasus, tokenizer, device, 'dialogue', 'summary', 2)
+            dataset_samsum_pt['test'], rouge_metric, model_pegasus, tokenizer, device, 'dialogue', 'summary', 2)
         rouge_dict = dict((rn, score[rn]) for rn in rouge_names)
 
         df = pd.DataFrame(rouge_dict, index=['pegasus'])

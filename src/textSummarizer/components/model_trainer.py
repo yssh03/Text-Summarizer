@@ -14,7 +14,6 @@ class ModelTrainer:
 
     def model_training(self) -> None:
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        print("device", device)
         tokenizer = AutoTokenizer.from_pretrained(self.config.model)
         model = AutoModelForSeq2SeqLM.from_pretrained(
             self.config.model).to(device)

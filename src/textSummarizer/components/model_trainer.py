@@ -44,9 +44,9 @@ class ModelTrainer:
             data_collator=data_collator
         )
 
-        # trainer.train()
+        trainer.train()
 
-        # model.save_pretrained(os.path.join(
-        #     self.config.root_dir, "pegasus_model"))
-        # tokenizer.save_pretrained(os.path.join(
-        #     self.config.root_dir, "tokenizer"))
+        model.save_pretrained(os.path.join(
+            self.config.root_dir, "pegasus_model"))
+        tokenizer.save_pretrained(os.path.join(
+            self.config.root_dir, "tokenizer"))
